@@ -1,6 +1,6 @@
 # Contact List Web Application
 
-This project is a web based contact listing application that allows listing contacts, searching by name, paging. Its data is taken from a file on application statup. Please find details below.
+This project is a web based contact listing application that allows listing contacts, searching by name, paging. Its data is taken from a file on application start-up. Please find details below.
 
 ## Table of Contents
 
@@ -21,10 +21,10 @@ There are 2 quick alternative ways to run the app in a Windows PC. The things to
         - ```git clone https://github.com/mstftikir/contactlist.git```
     - Go inside of the directory
         - ```cd contactlist```
-    - Run the app (make sure JAVA_HOME eviroment variable is being set.)
+    - Run the app (make sure JAVA_HOME environment variable is being set.)
         - ```mvnw spring-boot:run```
 2. IntelliJ
-    - Open IntelliJ startup page
+    - Open IntelliJ start-up page
         - ![](readme-resources/IntelliJStartUpPage.PNG)
     - Clone repository
         - ![](readme-resources/IntelliJClone.PNG)
@@ -33,14 +33,14 @@ There are 2 quick alternative ways to run the app in a Windows PC. The things to
 
 ## <a name="test"></a>Test
 
-1. After the application run, it is going to be avaliable in:
-    - ```http://localhost:8080/```
+1. After the application run, it is going to be available in:
+    - ```http://localhost:8080```
         - ![](readme-resources/ContactListPageTop.PNG)
         - ![](readme-resources/ContactListPageBottom.PNG)
 2. Rest address which gets all contacts:
     - ```http://localhost:8080/api/v1/contacts```
-3. h2-console is a web app that H2 db records is availeble to be queried. T_CONTACT table is created at start up and filled out with data in people.csv
-    - ``` http://localhost:8080/h2-console ```
+3. h2-console is a web app that H2 db records is available to be queried. T_CONTACT table is created at start up and filled out with data in people.csv
+    - ```http://localhost:8080/h2-console```
 
 ## <a name="technology-stack"></a>Technology Stack
 
@@ -77,5 +77,14 @@ The application developed in a Windows 10 PC via IntelliJ Ultimate 2019.3 IDE.
 
 ## <a name="architecture"></a>Architecture
 
-tbd
+    - When the spring boot application starts and ready, it reads data form people.csv and saves it to DB.
+    - Also, there is a caching mechanism on the controller.
+    - On first request, data is taken from DB and put to the in memory cache.
+    - On further requests if data not changed, it is being read from the cache.
 
+    - By default application starts with H2 in memory database, via ```spring.profiles.active=h2``` spring profile configuration in application.properties file.
+    - However, because Hibernate supports changing DB source via spring profile, it is easy to change datasource to another DB(e.g. Oracle DB).
+    - For example, if ```spring.profiles.active=oracle``` is configured, application-oracle.properties file is going to be active and application is going to integrate with Oracle DB:
+
+    - Architectural diagram:
+        - ![](readme-resources/Architecture.PNG)
