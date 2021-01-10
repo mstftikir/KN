@@ -15,5 +15,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest()
                 .permitAll()
                 .and().csrf().disable();
+
+        //To use h2-console
+        http.headers().frameOptions().disable();
     }
 }
