@@ -41,6 +41,8 @@ There are 2 quick alternative ways to run the app in a Windows PC. The things to
     - ```http://localhost:8080/api/v1/contacts```
 3. h2-console is a web app that H2 db records is available to be queried. T_CONTACT table is created at start up and filled out with data in people.csv
     - ```http://localhost:8080/h2-console```
+    - H2 Login info:
+        - ![](readme-resources/H2Login.PNG)
 
 ## <a name="technology-stack"></a>Technology Stack
 
