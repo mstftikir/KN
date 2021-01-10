@@ -39,13 +39,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!--Spring Test -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
         <!-- Spring Data JPA-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -71,6 +64,12 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!--Spring Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
         <!-- Junit5(Jupiter) -->
         <dependency>

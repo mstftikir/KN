@@ -1,14 +1,15 @@
 # Contact List Web Application
 
-This project is a web based contact listing application that allows listing contacts, searching by name, paging.
+This project is a web based contact listing application that allows listing contacts, searching by name, paging. Please find details below.
+
+
 
 ## Table of Contents
 
 1. [Build and Run](#build-run)
 2. [Technology Stack](#technology-stack)
-3. [Architecture](#architecture)
-4. [Application Components](#application-components)
-5. [Test](#test)
+3. [Test](#test)
+4. [Architecture](#architecture)
 
 ## <a name="build-run"></a>Build and Run
 
@@ -32,19 +33,51 @@ There are 2 quick alternatives ways to run the app in a Windows PC.
     - Run the main class
         - ![](readme-resources/IntelliJRunApp.PNG)
 
+## <a name="test"></a>Test
+
+1. After the application run, it is going to be avaliable in:
+    - ```http://localhost:8080/```
+        - ![](readme-resources/ContactListPageTop.PNG)
+        - ![](readme-resources/ContactListPageBottom.PNG)
+2. Rest address which gets all contacts:
+    - ```http://localhost:8080/api/v1/contacts```
+3. h2-console is a web app that H2 db records is availeble to be queried. T_CONTACT table is created at start up and filled out with data in people.csv
+    - ``` http://localhost:8080/h2-console ```
+
 ## <a name="technology-stack"></a>Technology Stack
 
-tbd
+The application developed in a Windows 10 PC via IntelliJ Ultimate 2019.3 IDE.
+
+1. Front End
+
+    - [JQuery 3.5.1](https://jquery.com/)
+    - [Datatables for JQuery](https://datatables.net/)
+    - [MDBootstrap JQuery] (https://mdbootstrap.com/docs/b4/jquery/)
+    - [Bootstrap 4.5.0](https://getbootstrap.com/)
+    - [Fontawsome 5.15.1](https://fontawesome.com/)
+    - [Popper 1.14.7)[https://popper.js.org/]
+    - HTML
+    - CSS
+
+2. Back End
+    - [Spring Boot 2.4.1](https://spring.io/projects/spring-boot)
+    - Spring Web
+    - Spring Thymeleaf
+    - Spring Tomcat
+    - Spring JPA
+    - Spring Cache
+    - Spring Securiry
+    - Spring Test
+    - JUnit 4/5
+    - Mockito
+
+3. Database
+    - H2 In Memory DB
+    - Hibernate
+    - Oracle DB
+        - <b>Switchable from h2 to Oracle via spring profile in application.properties.</b>
 
 ## <a name="architecture"></a>Architecture
 
 tbd
 
-## <a name="technology-stack"></a>Application Components
-
-tbd
-
-
-## <a name="test"></a>Test
-
-tbd
