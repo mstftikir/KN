@@ -19,18 +19,18 @@ There are 2 quick alternatives ways to run the app in a Windows PC.
 1. CLI
     - Open a terminal in a suitable directory.
     - Clone the repository.
-        ´´´git clone https://github.com/mstftikir/contactlist.git´´´
+        ```git clone https://github.com/mstftikir/contactlist.git```
     - Go inside of the directory
-        ´´´cd contactlist´´´
+        ```cd contactlist```
     - Run the app (make sure JAVA_HOME eviroment variable is being set.)
-        ´´´mvnw spring-boot:run´´´
+        ```mvnw spring-boot:run```
 2. IntelliJ
     - Open IntelliJ startup page
-        ![](readme-resources/IntelliJStartUpPage.PNG)
+        - ![](readme-resources/IntelliJStartUpPage.PNG)
     - Clone repository
-        ![](readme-resources/IntelliJClone.PNG)
+        - ![](readme-resources/IntelliJClone.PNG)
     - Run the main class
-        ![](readme-resources/IntelliJRunApp.PNG)
+        - ![](readme-resources/IntelliJRunApp.PNG)
 
 ## <a name="technology-stack"></a>Technology Stack
 
@@ -38,6 +38,7 @@ tbd
 
 ## <a name="architecture"></a>Architecture
 
+tbd
 
 ## <a name="technology-stack"></a>Application Components
 
