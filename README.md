@@ -13,7 +13,7 @@ This project is a web based contact listing application that allows listing cont
 
 This is a spring boot application, maven used as a build system.
 
-There are 2 quick alternative ways to run the app in a Windows PC.
+There are 2 quick alternative ways to run the app in a Windows PC. The things to do to run the application on other operating systems such as Unix, MacOs etc. are similar.
 
 1. CLI
     - Open a terminal in a suitable directory.
