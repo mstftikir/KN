@@ -81,9 +81,8 @@ The application developed in a Windows 10 PC via IntelliJ Ultimate 2019.3 IDE.
 
 - When the spring boot application starts and ready, it reads data form people.csv and saves it to DB.
 - Also, there is a caching mechanism on the controller.
-- On first request, data is taken from DB and put to the in memory cache.
+- On first request, data is taken from DB and put into the in memory cache.
 - On further requests if data not changed, it is being read from the cache.
-
 - By default application starts with H2 in memory database, via ```spring.profiles.active=h2``` spring profile configuration in application.properties file.
 - However, because Hibernate supports changing DB source via spring profile, it is easy to change datasource to another DB(e.g. Oracle DB).
 - For example, if ```spring.profiles.active=oracle``` is configured, application-oracle.properties file is going to be active and application is going to integrate with Oracle DB:
