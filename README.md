@@ -1,8 +1,6 @@
 # Contact List Web Application
 
-This project is a web based contact listing application that allows listing contacts, searching by name, paging. Please find details below.
-
-
+This project is a web based contact listing application that allows listing contacts, searching by name, paging. Its data is taken from a file on application statup. Please find details below.
 
 ## Table of Contents
 
@@ -15,7 +13,7 @@ This project is a web based contact listing application that allows listing cont
 
 This is a spring boot application, maven used as a build system.
 
-There are 2 quick alternatives ways to run the app in a Windows PC.
+There are 2 quick alternative ways to run the app in a Windows PC.
 
 1. CLI
     - Open a terminal in a suitable directory.
