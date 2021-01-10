@@ -53,13 +53,17 @@ public class ContactUtils {
                 String[] values = line.split(COMMA_DELIMITER);
                 StringBuilder fullName = new StringBuilder();
 
+                // Because last value in row is the url
+                // All values before the url consists the name
+                // So, append all to fullName
                 for (int i = 0; i < values.length - 1; i++) {
                     fullName.append(values[i]);
                 }
 
                 ContactDto contactDto = new ContactDto();
-
                 contactDto.setName(fullName.toString());
+
+                //get last value which is url
                 contactDto.setUrl(values[values.length - 1]);
 
                 contactDtoList.add(contactDto);
