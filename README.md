@@ -52,12 +52,12 @@ The application developed in a Windows 10 PC via IntelliJ Ultimate 2019.3 IDE.
 
     - [JQuery 3.5.1](https://jquery.com/)
     - [Datatables for JQuery](https://datatables.net/)
-    - [MDBootstrap JQuery] (https://mdbootstrap.com/docs/b4/jquery/)
+    - [MDBootstrap JQuery](https://mdbootstrap.com/docs/b4/jquery/)
     - [Bootstrap 4.5.0](https://getbootstrap.com/)
     - [Fontawsome 5.15.1](https://fontawesome.com/)
-    - [Popper 1.14.7)[https://popper.js.org/]
-    - HTML
-    - CSS
+    - [Popper 1.14.7](https://popper.js.org/)
+    - [HTML5](https://www.w3schools.com/html/)
+    - [CSS3](https://www.w3schools.com/css/)
 
 2. Back End
     - [Spring Boot 2.4.1](https://spring.io/projects/spring-boot)
