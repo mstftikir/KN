@@ -61,7 +61,7 @@ The application developed in a Windows 10 PC via IntelliJ Ultimate 2019.3 IDE.
 
 2. Back End
     - [Java 1.8](https://www.java.com/)
-    - [Maven](https://maven.apache.org/)
+    - [Maven 4.0.0](https://maven.apache.org/)
     - [Spring Boot 2.4.1](https://spring.io/projects/spring-boot)
     - Spring Web
     - Spring Thymeleaf
